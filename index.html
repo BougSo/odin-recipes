@@ -1,29 +1,41 @@
 <!doctype html>
-<html lang="de">
+<html lang="de" data-theme="dark">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Odin Recipes</title>
   <link rel="stylesheet" href="style.css">
+  <script src="app.js" defer></script>
 </head>
 <body>
   <div class="container">
-    <header class="header">
-      <div>
-        <h1>Odin Recipes</h1>
-        <p>Wähle ein Rezept:</p>
+
+    <header class="site-header">
+      <div class="brand">
+        <div>
+          <h1>Odin Recipes</h1>
+          <p>Wähle ein Rezept:</p>
+        </div>
       </div>
-      <span class="badge">HTML • CSS</span>
+
+      <div class="actions">
+        <span class="badge">HTML • CSS • JS</span>
+        <button class="btn" data-theme-toggle type="button">🌙 Dark</button>
+      </div>
     </header>
 
     <section class="grid">
+
       <a class="card" href="recipes/couscous.html">
         <img class="thumb" src="images/couscous.jpg" alt="Couscous">
         <div class="card-body">
           <div class="card-title">
             <h2>🥘 Couscous</h2><span class="badge">45 min</span>
           </div>
-          <p class="meta">Gemüse • Kichererbsen • Würzige Brühe</p>
+          <p class="meta">
+            <img class="icon" src="images/icons/couscous.png" alt="">
+            Gemüse • Kichererbsen • Brühe
+          </p>
         </div>
       </a>
 
@@ -33,7 +45,10 @@
           <div class="card-title">
             <h2>🍗 Tajine</h2><span class="badge">60 min</span>
           </div>
-          <p class="meta">Langsam geschmort • Oliven • Zitrone</p>
+          <p class="meta">
+            <img class="icon" src="images/icons/tajine.png" alt="">
+            Langsam geschmort • Oliven
+          </p>
         </div>
       </a>
 
@@ -43,12 +58,19 @@
           <div class="card-title">
             <h2>🍲 Harira</h2><span class="badge">60 min</span>
           </div>
-          <p class="meta">Tomaten • Linsen • Kichererbsen</p>
+          <p class="meta">
+            <img class="icon" src="images/icons/harira.png" alt="">
+            Tomaten • Linsen • Kichererbsen
+          </p>
         </div>
       </a>
+
     </section>
 
-    <p class="footer">Built as part of The Odin Project.</p>
+    <p class="footer">
+      Icons: Twemoji (CC-BY 4.0). 
+    </p>
+
   </div>
 </body>
 </html>
