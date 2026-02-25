@@ -2,18 +2,53 @@
 <html lang="de">
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Odin Recipes</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <div class="container">
+    <header class="header">
+      <div>
+        <h1>Odin Recipes</h1>
+        <p>Wähle ein Rezept:</p>
+      </div>
+      <span class="badge">HTML • CSS</span>
+    </header>
 
-<h1>Odin Recipes</h1>
-<p>Wähle ein Rezept:</p>
+    <section class="grid">
+      <a class="card" href="recipes/couscous.html">
+        <img class="thumb" src="images/couscous.jpg" alt="Couscous">
+        <div class="card-body">
+          <div class="card-title">
+            <h2>🥘 Couscous</h2><span class="badge">45 min</span>
+          </div>
+          <p class="meta">Gemüse • Kichererbsen • Würzige Brühe</p>
+        </div>
+      </a>
 
-<ul>
-  <li><a href="recipes/couscous.html">🥘 Couscous</a></li>
-  <li><a href="recipes/tajine.html">🍗 Tajine</a></li>
-  <li><a href="recipes/harira.html">🍲 Harira</a></li>
-</ul>
+      <a class="card" href="recipes/tajine.html">
+        <img class="thumb" src="images/tajine.jpg" alt="Tajine">
+        <div class="card-body">
+          <div class="card-title">
+            <h2>🍗 Tajine</h2><span class="badge">60 min</span>
+          </div>
+          <p class="meta">Langsam geschmort • Oliven • Zitrone</p>
+        </div>
+      </a>
 
+      <a class="card" href="recipes/harira.html">
+        <img class="thumb" src="images/harira.jpg" alt="Harira">
+        <div class="card-body">
+          <div class="card-title">
+            <h2>🍲 Harira</h2><span class="badge">60 min</span>
+          </div>
+          <p class="meta">Tomaten • Linsen • Kichererbsen</p>
+        </div>
+      </a>
+    </section>
+
+    <p class="footer">Built as part of The Odin Project.</p>
+  </div>
 </body>
 </html>
